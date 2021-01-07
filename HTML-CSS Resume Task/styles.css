@@ -1,0 +1,182 @@
+/* Setting up the box model */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* Setting up font family, size and overall background color */
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  background-color: #eee;
+}
+/* The container holds the entire resume */
+.container {
+  width: 70vw;
+  margin: 0 15vw 0 15vw;
+  background-color: white;
+  margin-bottom: 10px;
+}
+/* header to hold name,image and address */
+header {
+  height: 35vh;
+  border-bottom: 1px solid #ddd;
+}
+/* holds the name and the image  */
+.name-photo {
+  height: 30vh;
+  background-color: #444;
+  position: relative;
+}
+/* positioning the name and image  */
+.header-image-name{
+  height: 25vh;
+  width: 35vw;
+  margin: 0 17.5vw 0 17.5vw;
+  position: relative;
+  margin-top: 10px;
+  
+}
+/* The solid line in the header  */
+.solid-line{
+  height: 2rem;
+  background-color: #eee;
+  position: absolute;
+  top:22.5vh;
+  z-index: 1; /* is below the name div */
+  width: 70vw;
+}
+/* defining the name div properties  */
+.header-image-name .name{
+  background-color: goldenrod;
+  height: 5rem;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 80%;
+  font-size: 35px;
+  letter-spacing: 4px;
+  z-index: 2; /* To the seen above the solid line */
+}
+/* setting up the image div properties such as dotted-border  */
+.image{
+  height: 11rem;
+  overflow: hidden;
+  position: absolute;
+  left: 35%;
+  top:20%;
+  border: 2px dotted darkgoldenrod;
+  border-radius: 50%;
+  /* padding: 1px; */
+}
+/* Image filter and properties */
+.display-image{
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  object-fit: fill;
+}
+/* Address and other details  */
+.details {
+  display: flex;
+  height: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.details p{
+  font-size: 1.4rem;
+}
+/* Holds the description of the person  */
+.resume-body{
+  height: 150vh;
+  display: flex;
+  padding: 20px;
+}
+.heading-block{
+  display: flex;
+}
+/* Setting for the icon next to each side heading  */
+.icon{
+  color: darkgoldenrod;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 50%;
+  
+}
+
+/* defines the side heading properties  */
+.side-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.heading{
+  font-size: 2.5rem;
+  color: #555;
+}
+/* Left half of the resume body  */
+.left-half{
+  border-right: 1px solid #ddd;
+}
+/* equal width to both halves  */
+.left-half,
+.right-half{
+  width: 50vw;
+  /* border: 1px solid black; */
+  padding: 5rem 5rem 5rem 5rem;
+}
+/* Dotted border around each icon  */
+.dotted-border{
+  display: flex;
+  border: 2px dashed darkgoldenrod;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 10px;
+}
+/* Description of each side heading  */
+.description{
+  margin-top: 2rem;
+}
+.description-body{
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+.start{
+  margin-bottom: 2rem;
+  /* margin bottom after each segment in the resume */
+}
+div{
+  font-size: 1.4rem;
+}
+.skills-description p{
+  text-align: center;
+}
+/* displaying skills to one end and profiency to other end  */
+.ts,
+.as{
+  display: flex;
+  justify-content: space-between;
+}
+.technical-skills,
+.additional-skills{
+  margin-top: 2rem;
+}
+.designation{
+  display: flex;
+  justify-content: space-between;
+}
+.experience-description .description-body{
+  margin-left: 30px;
+}
+.final{
+  margin-top: 1rem;
+}
